@@ -23,7 +23,7 @@ namespace Turing_Machine_Simulator
         {
             if (!transition.Trim().Equals("_"))
             {
-                string key = name +"." +symbol;
+                string key = name +"."+symbol;
                 transitions.Add(key.Trim(), transition.Trim());
             }
            

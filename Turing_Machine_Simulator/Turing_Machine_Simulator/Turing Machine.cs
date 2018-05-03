@@ -16,12 +16,7 @@ namespace Turing_Machine_Simulator
         private int tapePosition;
         public bool accepted;
         public int stepCounter; 
-                /*  1;+;B
-                q0;q0,1,R;q1,1,R;_
-                q1;q1,1,R;_;q2,B,L
-                q2;q3,B,N;_;_
-                *q3; _;_;_*/
-        
+
         public Turing_Machine(string table)
         {
             states = new List<State>(); 
@@ -52,10 +47,15 @@ namespace Turing_Machine_Simulator
                 }
                 else 
                 {
-                    current = new State(moves[0]);
+                   
                     if (moves[0].Contains("*"))
                     {
-                        current.isFinal = true; 
+                        current = new State(moves[0].Substring(1));
+                        current.isFinal = true;
+                    }
+                    else
+                    {
+                        current = new State(moves[0]);
                     }
                     states.Add(current);
                     for(int j = 0; j < moves.Length-1; j++)
@@ -67,14 +67,31 @@ namespace Turing_Machine_Simulator
             current = initial; 
         }
 
+        public void Restart()
+        {
+            current = initial;
+            tape = "";
+            tapePosition = 0;
+            accepted = false;
+            stepCounter = 0; 
+        }
         public void DoTransition()
         {
-            //q2,a,R
             if (!current.isFinal)
             {
                 string actualTransition;
-                if (!current.transitions.TryGetValue((current.name + tape[tapePosition]), out actualTransition))
+                if (tape.Length <= tapePosition)
+                    tape += "B";
+                else if(tapePosition < 0)
                 {
+                    tapePosition++;
+                    tape = "B" + tape;
+                }
+          
+                string key = current.name + "." + tape[tapePosition];
+                if (!current.transitions.TryGetValue(key, out actualTransition))
+                {
+                    
                     accepted = false;
                     return;
                 }
@@ -82,9 +99,9 @@ namespace Turing_Machine_Simulator
                 {
                     string[] transition = actualTransition.Split(',');
                     current = states.Find(x => x.name.Equals(transition[0]));
-                    if (tape.Length <= tapePosition)
-                        tape += "B"; 
-                    tape.Insert(tapePosition, transition[1]);
+
+                    tape = ReplaceAtIndex(tapePosition, transition[1], tape); 
+                    //tape.Insert(tapePosition, transition[1]);
 
                     if (transition[2].Equals("R"))
                         tapePosition++;
@@ -100,7 +117,12 @@ namespace Turing_Machine_Simulator
             }                 
         }
 
-
+        private string ReplaceAtIndex(int i, string value, string word)
+        {
+            char[] letters = word.ToCharArray();
+            letters[i] = value.ToCharArray()[0];
+            return string.Join("", letters);
+        }
 
     }
 }
