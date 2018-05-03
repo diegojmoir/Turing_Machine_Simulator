@@ -9,13 +9,15 @@ namespace Turing_Machine_Simulator
     class Turing_Machine
     {
         public string tape;
-        public string[] alphabet;
-        public State initial;
+        private string[] alphabet;
+        private State initial;
         public State current;
-        public List<State> states;
+        private List<State> states;
         private int tapePosition;
         public bool accepted;
-        public int stepCounter; 
+        public int stepCounter;
+        public bool headerMovement;
+        public string message;
 
         public Turing_Machine(string table)
         {
@@ -23,7 +25,8 @@ namespace Turing_Machine_Simulator
             Initialize(table);
             tapePosition = 0;
             tape = "";
-            stepCounter = 0; 
+            stepCounter = 0;
+            accepted = true; 
         }
         
         private void Initialize(string transitions)
@@ -91,7 +94,6 @@ namespace Turing_Machine_Simulator
                 string key = current.name + "." + tape[tapePosition];
                 if (!current.transitions.TryGetValue(key, out actualTransition))
                 {
-                    
                     accepted = false;
                     return;
                 }
@@ -101,18 +103,23 @@ namespace Turing_Machine_Simulator
                     current = states.Find(x => x.name.Equals(transition[0]));
 
                     tape = ReplaceAtIndex(tapePosition, transition[1], tape); 
-                    //tape.Insert(tapePosition, transition[1]);
 
                     if (transition[2].Equals("R"))
+                    {
                         tapePosition++;
+                        headerMovement = true;
+                    }
                     else if (transition[2].Equals("L"))
+                    {
                         tapePosition--;
+                        headerMovement = false; 
+                    }
+                        
                     stepCounter++; 
                 }
             }
             else
             {
-                accepted = true; 
                 return; 
             }                 
         }

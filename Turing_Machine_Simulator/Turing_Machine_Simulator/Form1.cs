@@ -72,21 +72,49 @@ namespace Turing_Machine_Simulator
         "q13; _; _; _; q14,B,N; _; _; _; _\n" +
         "*q14";
 
+        int x;
+        int y;
+        private void headerMovement(bool where)
+        {
+            x = pictureBox1.Location.X;
+            y = pictureBox1.Location.Y;
+            if (where)
+                pictureBox1.Location = new Point(x + 24, y);
+            else
+                pictureBox1.Location = new Point(x - 24 , y);
+        }
+
+        private void ResetHeader()
+        {
+            pictureBox1.Location = new Point(244, 226);
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             machine.DoTransition();
             lbTape.Text = machine.tape;
             lbSteps.Text = machine.stepCounter.ToString();
             lbCurrentStep.Text = machine.current.name;
+            headerMovement(machine.headerMovement);
             if (machine.current.isFinal)
             {
+                if(radioButton5.Checked)
+                    lbTape.Text = "Congrats :J";
+
                 timer1.Enabled = false;
+            }
+            else if (!machine.accepted)
+            {
+                lbTape.Text = "The input wasn't accepted :'(";
+                timer1.Enabled = false; 
+                   
             }
 
         }
         int control = 0;
         private void button1_Click(object sender, EventArgs e)
         {
+
             if (radioButton1.Checked)
             {
                 machine = new Turing_Machine(addTable);
@@ -136,7 +164,11 @@ namespace Turing_Machine_Simulator
             {
                 timer1.Enabled = false;
                 control = 0;
-                button1.Text = "Iniciar"; 
+                button1.Text = "Iniciar";
+                ResetHeader();
+                lbTape.Text = "Cinta";
+                lbSteps.Text = "0";
+                lbCurrentStep.Text = "q0"; 
             }
   
         }
