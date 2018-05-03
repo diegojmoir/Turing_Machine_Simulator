@@ -15,6 +15,67 @@ namespace Turing_Machine_Simulator
         public Form1()
         {
             InitializeComponent();
+            string addTable = "1;+;B\n" +
+                "q0;q0,1,R;q1,1,R;_\n" +
+               "q1;q1,1,R;_;q2,B,L\n" +
+                "q2;q3,B,N;_;_\n" +
+                "*q3";
+
+            string subTable = "1;-;B\n" +
+                        "q0;q1,B,R;_;_\n" +
+                        "q1; q1,1,R; q2,-,R;_\n" +
+                        "q2; q2,1,R; _; q3,B,L\n" +
+                        "q3; q5,B,L; q6,B,N;_\n" +
+                        "q4; q4,1,L; q4,-,L; q0,B,R\n" +
+                        "q5; q4,1,L; q6,B,N; _\n" +
+                        "*q6";
+
+            string multTable = "1;*;=;S;B\n" +
+                "q0; q1,B,R; q8,B,R; _; _; _\n" +
+                "q1; q1,1,R; q2,*,R; _; _; _\n" +
+                "q2; q3,S,R; _; q6,=,L; q2,S,R; _\n" +
+                "q3; q3,1,R; _; q4,=,R; _; _\n" +
+                "q4; q4,1,R; _; _; _; q5,1,L\n" +
+                "q5; q5,1,L; q2,*,R; q5,=,L; q5,S,L; _\n" +
+                "q6; _; q7,*,L; _; q6,1,L; _\n" +
+                "q7; q7,1,L; _; _; _; q0,B,R\n" +
+                "q8; q8,B,R; _; q9,B,N; _; _\n" +
+                "*q9";
+
+            string palindromeTable = "a;b;c;B\n" +
+          "q0; q1,B,R; q4,B,R; q6,B,R; q8,B,N\n" +
+          "q1; q1,a,R; q1,b,R; q1,c,R; q2,B,L\n" +
+          "q2; q3,B,L; _; _; q8,B,N\n" +
+          "q3; q3,a,L; q3,b,L; q3,c,L; q0,B,R\n" +
+          "q4; q4,a,R; q4,b,R; q4,c,R; q5,B,L\n" +
+          "q5; _; q3,B,L; _; q8,B,N\n" +
+          "q6; q6,a,R; q6,b,R; q6,c,R; q7,B,L\n" +
+          "q7; _; _; q3,B,L; q8,B,N\n" +
+          "*q8";
+
+            string copyTable = "a;b;c;?;B;X;Y;Z\n" +
+            "q0; q0,a,R; q0,b,R; q0,c,R; _; q1,?,L; _; _; _\n" +
+            "q1; q1,a,L; q1,b,L; q1,c,L; _; q2,B,R; _; _; _\n" +
+            "q2; q3,X,R; q5,Y,R; q7,Z,R; q9,?,R; _; _; _; _\n" +
+            "q3; q3,a,R; q3,b,R; q3,c,R; q3,?,R; q4,a,L; _; _; _\n" +
+            "q4; q4,a,L; q4,b,L; q4,c,L; q4,?,L; _; q2,a,R; _; _\n" +
+            "q5; q5,a,R; q5,b,R; q5,c,R; q5,?,R; q6,b,L; _; _; _\n" +
+            "q6; q6,a,L; q6,b,L; q6,c,L; q4,?,L; _; _; q2,b,R; _\n" +
+            "q7; q7,a,R; q7,b,R; q7,c,R; q7,?,R; q8,c,L; _; _; _\n" +
+            "q8; q8,a,L; q8,b,L; q8,c,L; q8,?,L; _; _; _; q2,c,R\n" +
+            "q9; q10,?,L; q11,?,L; q12,?,L; _; q13,B,L; _; _; _\n" +
+            "q10; _; _; _; q2,a,R; _; _; _; _\n" +
+            "q11; _; _; _; q2,b,R; _; _; _; _\n" +
+            "q12; _; _; _; q2,c,R; _; _; _; _\n" +
+            "q13; _; _; _; q14,B,N; _; _; _; _\n" +
+            "*q14";
+
+            Turing_Machine copy = new Turing_Machine(copyTable); 
+            Turing_Machine palin = new Turing_Machine(palindromeTable); 
+            Turing_Machine mult = new Turing_Machine(multTable); 
+            Turing_Machine add = new Turing_Machine(addTable);
+            Turing_Machine sub = new Turing_Machine(subTable); 
+            bool oso = true; 
         }
     }
 }

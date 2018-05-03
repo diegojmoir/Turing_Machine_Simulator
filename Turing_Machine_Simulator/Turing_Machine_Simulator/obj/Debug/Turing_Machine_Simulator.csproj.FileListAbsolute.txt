@@ -1,1 +1,9 @@
 C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\bin\Debug\Turing_Machine_Simulator.exe.config
+C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\bin\Debug\Turing_Machine_Simulator.exe
+C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\bin\Debug\Turing_Machine_Simulator.pdb
+C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.csprojResolveAssemblyReference.cache
+C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.Form1.resources
+C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.Properties.Resources.resources
+C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.csproj.GenerateResource.Cache
+C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.exe
+C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.pdb
