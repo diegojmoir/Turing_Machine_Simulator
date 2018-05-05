@@ -7,3 +7,13 @@ C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automata
 C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.csproj.GenerateResource.Cache
 C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.exe
 C:\Users\Diego Pérez Moir\Desktop\U\Quinto Cinclo\Lenguajes Formales y Automatas\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.pdb
+C:\Users\Oscar\Desktop\Temp Oso\Turing_Machine_Simulator-master\Turing_Machine_Simulator-master\Turing_Machine_Simulator\Turing_Machine_Simulator\bin\Debug\Turing_Machine_Simulator.exe.config
+C:\Users\Oscar\Desktop\Temp Oso\Turing_Machine_Simulator-master\Turing_Machine_Simulator-master\Turing_Machine_Simulator\Turing_Machine_Simulator\bin\Debug\Turing_Machine_Simulator.exe
+C:\Users\Oscar\Desktop\Temp Oso\Turing_Machine_Simulator-master\Turing_Machine_Simulator-master\Turing_Machine_Simulator\Turing_Machine_Simulator\bin\Debug\Turing_Machine_Simulator.pdb
+C:\Users\Oscar\Desktop\Temp Oso\Turing_Machine_Simulator-master\Turing_Machine_Simulator-master\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.csprojResolveAssemblyReference.cache
+C:\Users\Oscar\Desktop\Temp Oso\Turing_Machine_Simulator-master\Turing_Machine_Simulator-master\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.Form1.resources
+C:\Users\Oscar\Desktop\Temp Oso\Turing_Machine_Simulator-master\Turing_Machine_Simulator-master\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.Properties.Resources.resources
+C:\Users\Oscar\Desktop\Temp Oso\Turing_Machine_Simulator-master\Turing_Machine_Simulator-master\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.csproj.GenerateResource.Cache
+C:\Users\Oscar\Desktop\Temp Oso\Turing_Machine_Simulator-master\Turing_Machine_Simulator-master\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\Desktop\Temp Oso\Turing_Machine_Simulator-master\Turing_Machine_Simulator-master\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.exe
+C:\Users\Oscar\Desktop\Temp Oso\Turing_Machine_Simulator-master\Turing_Machine_Simulator-master\Turing_Machine_Simulator\Turing_Machine_Simulator\obj\Debug\Turing_Machine_Simulator.pdb

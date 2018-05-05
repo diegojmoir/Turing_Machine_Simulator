@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -156,10 +157,10 @@
             // 
             this.lbTape.AutoSize = true;
             this.lbTape.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbTape.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTape.Font = new System.Drawing.Font("Courier New", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTape.Location = new System.Drawing.Point(219, 134);
             this.lbTape.Name = "lbTape";
-            this.lbTape.Size = new System.Drawing.Size(192, 89);
+            this.lbTape.Size = new System.Drawing.Size(220, 69);
             this.lbTape.TabIndex = 4;
             this.lbTape.Text = "Cinta";
             // 
@@ -209,10 +210,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Turing_Machine_Simulator.Properties.Resources.up_arrow;
-            this.pictureBox1.Location = new System.Drawing.Point(244, 226);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(233, 195);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 29);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 

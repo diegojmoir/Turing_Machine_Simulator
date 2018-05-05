@@ -79,14 +79,14 @@ namespace Turing_Machine_Simulator
             x = pictureBox1.Location.X;
             y = pictureBox1.Location.Y;
             if (where)
-                pictureBox1.Location = new Point(x + 24, y);
+                pictureBox1.Location = new Point(x + 37, y);
             else
-                pictureBox1.Location = new Point(x - 24 , y);
+                pictureBox1.Location = new Point(x - 37 , y);
         }
 
         private void ResetHeader()
         {
-            pictureBox1.Location = new Point(244, 226);
+            pictureBox1.Location = new Point(233, 205);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
